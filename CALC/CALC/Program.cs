@@ -24,7 +24,7 @@ namespace ConsoleApp20
         {
 
             {
-                Console.WriteLine("enter the first number:");
+                Console.WriteLine("enter the first number: RECENTLY CHANGED BY NGOATO");
                 int num1 = int.Parse(Console.ReadLine());
 
                 Console.WriteLine("enter the second number");
