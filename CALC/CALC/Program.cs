@@ -5,12 +5,13 @@ namespace ConsoleApp20
 
     internal class Calculator
     {
-        // properties of a bank 
+        // Properties to store calculator values 
         public double Add { get; set; }
         public double Subtract { get; set; }
         public double Multiply { get; set; }
         public double Divide { get; set; }
 
+        // Constructor to initialize calculator properties
         public Calculator(double add, double subtract, double multiply, double divide)
         {
             Add = add;
@@ -18,11 +19,12 @@ namespace ConsoleApp20
             Multiply = multiply;
             Divide = divide;
         }
+        // Method to add two numbers entered by the user
         public void AddNumbers()
         {
 
             {
-                Console.WriteLine("enter the first number: BBBBBBBBBBBBB  ");
+                Console.WriteLine("enter the first number:");
                 int num1 = int.Parse(Console.ReadLine());
 
                 Console.WriteLine("enter the second number");
