@@ -75,6 +75,11 @@ namespace ConsoleApp20
                 calc.AddNumbers();
                 Console.WriteLine("do you want to add again (yes/no)");
                 string choice = Console.ReadLine().ToLower();
+
+                if(choice != "yes")
+                {
+                    break;
+                }
             }
 
             while (true)
