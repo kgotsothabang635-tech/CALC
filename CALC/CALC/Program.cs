@@ -22,7 +22,7 @@ namespace ConsoleApp20
         {
 
             {
-                Console.WriteLine("enter the first number: AAAAAAAAAAA  ");
+                Console.WriteLine("enter the first number: BBBBBBBBBBBBB  ");
                 int num1 = int.Parse(Console.ReadLine());
 
                 Console.WriteLine("enter the second number");
