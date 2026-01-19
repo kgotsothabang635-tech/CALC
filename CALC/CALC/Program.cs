@@ -1,10 +1,12 @@
 ﻿using System.Diagnostics.CodeAnalysis;
+using System.Threading.Channels;
 
 namespace ConsoleApp20
 {
 
     internal class Calculator
-    {
+    { 
+        /*
         // Properties to store calculator values 
         public double Add { get; set; }
         public double Subtract { get; set; }
@@ -18,7 +20,7 @@ namespace ConsoleApp20
             Subtract = subtract;
             Multiply = multiply;
             Divide = divide;
-        }
+        }*/
         // Method to add two numbers entered by the user
         public void AddNumbers()
         {
@@ -66,11 +68,30 @@ namespace ConsoleApp20
     {
         static void Main(string[] args)
         {
+            /*
             double add = 0;
             double subtract = 0;
             double multiply = 0;
-            double divide = 0;
-            Calculator calc = new Calculator(add, subtract, multiply, divide);
+            double divide = 0;*/
+            Calculator calc = new Calculator();
+
+            int calcmenu = Convert.ToInt32(Console.ReadLine());
+
+            switch (calcmenu)
+            {
+                case 1:
+                    Console.WriteLine("add numbers");
+                 break;
+                    case 2:
+                    Console.WriteLine("subtract numbers");
+                    break;
+                    case 3:
+                    Console.WriteLine("multiply numbers ");
+                    break;
+                    case 4:
+                    Console.WriteLine("devide numbers ");
+                    break;
+            }
 
             while (true)
             {
